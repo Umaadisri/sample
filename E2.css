@@ -1,0 +1,16 @@
+.gallery{
+    position: relative;
+    width: 150px;
+}
+.image img{
+    width: 100x;
+}
+.overlay{
+    position: absolute; top:0; left:0; width: 100x;
+    height: 100x; background: rgha(0,0,0,0,5);
+    color: #fff; opacity: center; display: flex;
+    align-items: center; justify-content: center;
+    
+
+
+}

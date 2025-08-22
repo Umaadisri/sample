@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Drop-down Menu</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Main navigation container */
+    nav {
+      background-color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Main menu (horizontal) */
+    .menu {
+      list-style: none;
+      display: flex;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    /* Top-level menu items */
+    .menu > li > a {
+      display: block;
+      padding: 15px 20px;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      background-color: #333;
+    }
+
+    .menu > li > a:hover {
+      background-color: #444;
+    }
+
+    /* Submenu container - hidden by default */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      min-width: 180px;
+      z-index: 1000;
+    }
+
+    /* Submenu items */
+    .submenu li a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .submenu li a:hover {
+      background-color:white;
+    }
+
+    /* Show submenu on hover */
+    .menu > li:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Services</a>
+        <ul class="submenu">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">About</a>
+        <ul class="submenu">
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
